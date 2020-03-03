@@ -2,14 +2,12 @@
 
 body{
 	background:  #f4c2c2 ;
-	
 }
 #clock{
 	font-family: 'Anton';
 	font-size: 300px;
 	text-align: center;
 	margin:auto;
-	text-shadow: 10px 20px  #222;
+	text-shadow: 10px 10px  #222;
 	color:#dd1f58;
 }
-
