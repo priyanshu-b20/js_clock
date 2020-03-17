@@ -3,11 +3,31 @@
 body{
 	background:  #f4c2c2 ;
 }
-#clock{
+#things{
 	font-family: 'Anton';
 	font-size: 300px;
 	text-align: center;
 	margin:auto;
 	text-shadow: 10px 10px  #222;
 	color:#dd1f58;
+}
+#nax > button{
+	font-family: 'Anton';
+	font-size: 20px;
+	background: #dd1f58;
+	color: #222;
+	padding:10px;
+	border: solid 5px #222;
+	border-radius:15px;
+	margin: 10px;
+	transition: .75s ease;
+	outline:none;
+}
+
+#nax > button:focus,#nax > button:hover{
+	background: #f4c2c2;
+	border: solid 5px #dd1f58;
+	color: #dd1f58;
+	text-shadow: 1px 1px 1px 1px #222;
+	cursor: pointer;
 }
