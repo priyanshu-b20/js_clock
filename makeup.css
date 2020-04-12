@@ -10,6 +10,7 @@ body{
 	margin:auto;
 	text-shadow: 10px 10px  #222;
 	color:#dd1f58;
+	transition: .75s ease;
 }
 #nax > input{
 	font-family: 'Anton';

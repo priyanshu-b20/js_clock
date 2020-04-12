@@ -1,36 +1,33 @@
-var things = document.getElementById('things');
-var mm = document.getElementById('mm');
-function clock(){
-	setInterval(clk,1000);
-}
-function clk(){
-	function r(n){
-		if(n<10){
-			return "0"+n;
-		}
-		else{
-			return n;
-		}
-	}
-	var d = new Date();
-	things.innerHTML = ((d.getHours()>12) ? r(d.getHours()-12) : r(d.getHours())) + " : " + r(d.getMinutes()) + ' ' + ((d.getHours()>12) ? 'PM' : 'AM');
-}
-function stopwatch(){
-	var e = document.getElementById('sw');
+let clk = null
+
+const clock = () => {
+	clk = setInterval(() => {
+		const date = new Date()
+		$('#things').text(`${date.getHours()} : ${date.getMinutes()}`)
+	},1000)
 	
-	setInterval(sw,1000);
 }
-var i=0,j=0,k=0;
-function sw(){
-	things.innerHTML = i + " : " + j + " : " + k;
-	k++;
-	if(k==60){
-		k=0;
-		j++
-	}
+const stopwatch = () => {
+	let min = 0
+	let sec = 0
+	console.log('hello')
+	clearInterval(clk)
+	setInterval(() => {
+		$('#things').text(`${min} : ${sec}`)
+		sec++
+		if(sec==60){
+			min++
+			sec=0
+		}
+		
+	},1000)
 	
-	if(j==60){
-		j=0;
-		i++;
-	}
 }
+
+$(document).ready(() =>{
+	clock()
+	$('input[value="stopwatch"]').click(() => clock())
+	$('input[value="stopwatch"]').click(() => stopwatch())
+
+});
+
