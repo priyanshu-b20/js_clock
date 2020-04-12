@@ -12,7 +12,7 @@ body{
 	color:#dd1f58;
 	transition: .75s ease;
 }
-#nax > input{
+div > input{
 	font-family: 'Anton';
 	font-size: 20px;
 	background: #dd1f58;
@@ -25,7 +25,37 @@ body{
 	outline:none;
 }
 
-#nax > input:focus,#nax > input:hover{
+div > input[value=lap]{
+	display: none;
+	margin-right: 0px;
+	border-right: 1px;
+	border-radius: 15px 0px 0px 15px
+}
+div > input[value=stop], div > input[value=start]{
+	display: none;
+	margin-left: 0px;
+	border-left: none;
+	border-radius: 0px 15px 15px 0px 
+}
+
+div > input[value=stop]:focus,div > input[value=stop]:hover,
+div > input[value=start]:focus,div > input[value=start]:hover{
+	background: #f4c2c2;
+	border: solid 5px #dd1f58;
+	border-left: none;
+	color: #dd1f58;
+	text-shadow: 1px 1px 1px 1px #222;
+	cursor: pointer;
+}
+div > input[value=lap]:focus,div > input[value=lap]:hover{
+	background: #f4c2c2;
+	border: solid 5px #dd1f58;
+	border-right: none;
+	color: #dd1f58;
+	text-shadow: 1px 1px 1px 1px #222;
+	cursor: pointer;	
+}
+div > input:focus,div > input:hover{
 	background: #f4c2c2;
 	border: solid 5px #dd1f58;
 	color: #dd1f58;
