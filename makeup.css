@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
 	background:  #f4c2c2 ;
 }
@@ -61,4 +61,24 @@ div > input:focus,div > input:hover{
 	color: #dd1f58;
 	text-shadow: 1px 1px 1px 1px #222;
 	cursor: pointer;
+}
+
+h3{
+	font-family: 'Roboto', sans-serif;
+	display: none;
+}
+ol{
+	font-family: 'Roboto', sans-serif;
+	height: 100px;
+	width: 100px;
+	overflow: auto;
+	display: none;
+}
+input[placeholder]{
+	background:#f4c2c2;
+	outline: none;
+	padding: 5px;
+	text-align: center;
+	border:solid 1px #222;
+	display: none;
 }
