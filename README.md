@@ -1,4 +1,4 @@
-#Clock App
+# Clock App
 
 you can check out the live version on this [link](https://priyanshu-b20.github.io/js_clock/index.html)
 
@@ -13,4 +13,4 @@ __Features:__
 * Stopwatch
 * Timer
 
-_timer has a little bug in it, but it works anyway_
+_timer has a little bug in it, but it works anyway_ :)
